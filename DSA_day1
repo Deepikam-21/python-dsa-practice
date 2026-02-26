@@ -1,0 +1,27 @@
+# 1. Find Largest Element in Array
+
+arr = [10, 45, 23, 89, 12]
+largest = arr[0]
+for num in arr:
+    if num > largest:
+        largest = num
+print("Largest element:", largest)
+
+# 2. Find Sum of Elements in Array
+arr2 = [5, 10, 15, 20]
+total = 0
+for num in arr2:
+    total += num
+print("Sum of elements:", total)
+
+# 3. Linear Search
+arr3 = [4, 8, 15, 16, 23, 42]
+key = 15
+found = False
+for i in range(len(arr3)):
+    if arr3[i] == key:
+        print("Element found at index:", i)
+        found = True
+        break
+if not found:
+    print("Element not found")
