@@ -1,45 +1,32 @@
-# Day New - Two Pointer & Array Rotation
-
 # 1. Rotate Array to Right by K Positions
 
 arr = [1, 2, 3, 4, 5]
 k = 2
-
 k = k % len(arr)
 rotated = arr[-k:] + arr[:-k]
-
 print("Rotated array:", rotated)
-
 
 # 2. Move All Zeros to End
 
 arr2 = [0, 1, 0, 3, 12]
-
 index = 0
-
 for num in arr2:
     if num != 0:
         arr2[index] = num
         index += 1
-
 while index < len(arr2):
     arr2[index] = 0
     index += 1
-
 print("After moving zeros:", arr2)
-
 
 # 3. Check if Array is Sorted
 
 arr3 = [1, 2, 3, 4, 5]
-
 is_sorted = True
-
 for i in range(len(arr3) - 1):
     if arr3[i] > arr3[i + 1]:
         is_sorted = False
         break
-
 if is_sorted:
     print("Array is sorted")
 else:
